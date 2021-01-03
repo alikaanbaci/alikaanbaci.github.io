@@ -1,4 +1,6 @@
 import React from 'react';
+import CodeComponent from '../../component/CodeComponent';
+
 
 export default class StrategyPatternContent extends React.Component {
     
@@ -6,7 +8,7 @@ export default class StrategyPatternContent extends React.Component {
         return (
             <div>
                 <h1>Strategy Pattern</h1>
-                <p>Explain design pattern....</p>
+                 <CodeComponent code={"composite"}/>
             </div>
         )
     }
