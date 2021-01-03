@@ -1,4 +1,4 @@
-onst dfs = `import java.util.ArrayList;
+onst composite = `import java.util.ArrayList;
 import java.util.List;
 
 /*--------------------------------------------------------
