@@ -11,7 +11,7 @@ treat these types uniformly, it can be right choice.
 ---------------------------------------------------------*/
 
 
-// Component class
+/* Component class */
 abstract class Employee {
 
     private final String name;
@@ -27,7 +27,7 @@ abstract class Employee {
     public abstract String work ();
 }
 
-// Leaf class
+/* Leaf class */
 class Developer extends Employee {
 
     protected Developer(String name) {
@@ -40,7 +40,7 @@ class Developer extends Employee {
     }
 }
 
-// leaf class
+/* leaf class */
 class BusinessAnalyst extends Employee {
 
     protected BusinessAnalyst(String name) {
@@ -52,7 +52,7 @@ class BusinessAnalyst extends Employee {
     }
 }
 
-// Composite Class
+/* Composite Class */
 class Manager extends Employee {
 
     private final List<Employee> reporters = new ArrayList<>();
