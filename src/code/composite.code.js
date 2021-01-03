@@ -1,4 +1,4 @@
-onst composite = `import java.util.ArrayList;
+const composite = `import java.util.ArrayList;
 import java.util.List;
 
 /*--------------------------------------------------------
