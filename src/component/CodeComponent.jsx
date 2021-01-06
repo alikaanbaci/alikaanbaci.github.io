@@ -13,7 +13,7 @@ export default class CodeComponent extends React.Component {
         return (
             <div>
                 <SyntaxHighlighter
-                    showLineNumbers language="python" style={xcode}>
+                    showLineNumbers language={this.props.lang} style={xcode}>
                     {this.codeProvider.getCodeString(this.props.code)}
                 </SyntaxHighlighter>
             </div>

@@ -5,15 +5,25 @@ export default class SidebarComponent extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {isOpened: false}
+        this.state = {isOpen: []};
+        this.props.pages.forEach(e => {
+            this.state.isOpen.push(false)
+        });
     }
 
     hasChildren(item) {
         return item.children && item.children.length;
     }
 
-    open() {
-        this.setState({isOpened: !this.state.isOpened})
+    open(index) {
+        this.setState(state => {
+            const isOpen = state.isOpen.map((item, i) => {
+                return index === i ? !item : item;
+            });
+            return { isOpen };
+        });
+
+        console.log(this.state)
     }
 
     render () {
@@ -25,8 +35,8 @@ export default class SidebarComponent extends React.Component {
                             return (
                                 <ul>
                                     <li>
-                                        <Link onClick={this.open.bind(this)} key={i} to={link.path}>{link.pageName}</Link>
-                                        {this.hasChildren(link) && this.state.isOpened && <SidebarComponent pages={link.children}/>}
+                                        <Link onClick={this.open.bind(this, i)} key={i} to={link.path}>{link.pageName}</Link>
+                                        {this.hasChildren(link) && this.state.isOpen[i] && <SidebarComponent pages={link.children}/>}
                                     </li>
                                 </ul>
                             ) 

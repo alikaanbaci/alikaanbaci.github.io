@@ -18,7 +18,7 @@ export default class AdapterPatternContent extends React.Component {
                     <p><strong><em>Definition:</em></strong></p>
                     <p>The adapter pattern convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn&rsquo;t otherwise because of incompatible interfaces.</p>
                 </div>
-                <CodeComponent code={"dfs"}/>
+                <CodeComponent lang={"python"} code={"dfs"}/>
             </div>
         )
     }

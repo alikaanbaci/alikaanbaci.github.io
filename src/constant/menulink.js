@@ -16,8 +16,8 @@ export const menulinks = [
             },
             {
                 "key": 1,
-                "pageName": "Strategy Pattern",
-                "path": "/main/design-pattern/decorator"
+                "pageName": "Composite Pattern",
+                "path": "/main/design-pattern/composite"
             }
         ]
     },
