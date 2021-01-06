@@ -22,8 +22,6 @@ export default class SidebarComponent extends React.Component {
             });
             return { isOpen };
         });
-
-        console.log(this.state)
     }
 
     render () {
