@@ -6,12 +6,12 @@ export const menulinks = [
     },
     {
         "key": 0,
-        "pageName": "Design Patterns",
+        "pageName": "OOP & Design Patterns",
         "path": "/main/design-pattern/adapter",
         "children":  [
             {
                 "key": 1,
-                "pageName": "Adapter Pattern",
+                "pageName": "Basic OOP Concepts",
                 "path": "/main/design-pattern/adapter"
             },
             {

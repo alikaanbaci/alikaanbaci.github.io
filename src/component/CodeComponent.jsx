@@ -12,8 +12,8 @@ export default class CodeComponent extends React.Component {
     render () {
         return (
             <div>
-                <SyntaxHighlighter
-                    showLineNumbers language={this.props.lang} style={xcode}>
+                <SyntaxHighlighter customStyle ={ {fontSize: "0.9em"}}
+                    language={this.props.lang} style={xcode}>
                     {this.codeProvider.getCodeString(this.props.code)}
                 </SyntaxHighlighter>
             </div>

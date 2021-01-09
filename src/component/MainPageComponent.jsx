@@ -1,10 +1,10 @@
 import React from 'react';
-import AdapterPatternContent from '../content/design-pattern/AdapterPatternContent';
+import BasicOOPContent from '../content/design-pattern/BasicOOPContent';
 import {Route} from 'react-router-dom';
 import {menulinks} from '../constant/menulink';
 import SidebarComponent from './SidebarComponent';
 import MainContent from '../content/MainContent';
-import CompositePatternContent from '../content/design-pattern/StrategyPatternContent';
+import CompositePatternContent from '../content/design-pattern/CompositePatternContent';
 import SpringFrameworkContent from '../content/springframework/SpringframeworkContent';
 
 export default class MainPageComponent extends React.Component {
@@ -21,7 +21,7 @@ export default class MainPageComponent extends React.Component {
                         <SpringFrameworkContent/>
                     </Route>
                     <Route path="/main/design-pattern/adapter">
-                        <AdapterPatternContent/>
+                        <BasicOOPContent/>
                     </Route>
                     <Route path="/main/design-pattern/composite">
                         <CompositePatternContent/>
