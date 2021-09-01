@@ -4,4 +4,12 @@
 
 layout: home
 ---
+
+<h2>Favorite Podcasts</h2>
+<ul>
+{% for item in site.data.samplelist.podcasts %}
+<li><a href="{{item.url}}" alt="{{item.title}}">{{item.title}}</a></li>
+{% endfor %}
+</ul>
+
 asdasdasd
