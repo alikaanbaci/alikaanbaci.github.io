@@ -26,16 +26,6 @@
         {% endfor %}
       </ul>
       </header>
-    </div>
-    <div class="wrapper">
-      <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
-      <h2>{{ site.data.samplelist.docs_list_title }}</h2>
-      <ul>
-        {% for item in site.data.samplelist.docs %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-      </header>
       <section>
 
       {{ content }}
